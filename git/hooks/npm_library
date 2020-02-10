@@ -1,0 +1,19 @@
+commit or pushする前にlintのチェックを走らせたい、testを実行させたい、bitbucket-pipelineのcacheをクリアしたい。
+などの理由でhookをかませたい。
+
+●リモート側(bitbucket側)でやれないのか？
+　bitbucket cloudだと利用できないっぽい？
+　https://community.atlassian.com/t5/Bitbucket-questions/Does-Bitbucket-Cloud-support-git-pre-receive-hooks/qaq-p/950235
+
+　pushされた後にpipelineを走らせて、pipelineの中で処理すれば行けそう。
+　ただし、コストがかかるし、今pushされたものが何かを判定するのが厳しいと思われる。(package.jsonが更新された時だけの処理とか）
+ 
+
+●ローカル側でやる場合
+　git配下はgit管理されないので、全員で共有するのが難しい。
+
+　そこでnpm libraryでできるという話。
+  npm-pre-commitや、huskyがあるが、huskyが圧倒的。
+  https://www.npmtrends.com/git-hooks-vs-husky-vs-pre-commit
+
+
