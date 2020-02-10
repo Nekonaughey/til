@@ -12,3 +12,51 @@ https://bitbucket.org/atlassian/bitbucket-clear-cache/src/master/
 ⇒/pipe/pipe.pyを見るとinternalのapiを呼んでいる様子
 
 
+実際にやってみたらcacheクリアできた。
+
+```
+const axios = require('axios');
+const queryString = require('querystring');
+
+(async () => {
+  const axiosConfig = {
+    auth: {
+      username: "m-kiyota",
+      password: "★app-password",// https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html
+    },
+  };
+  try {
+    console.log('Checking for existing caches');
+    const cachesEndpoint = `https://api.bitbucket.org/internal/repositories/lignum-vitae/experiment-pipelinetest/pipelines_caches/?page=1&pagelen=10`;
+    const response = await axios.get(cachesEndpoint, axiosConfig);
+    if (
+      !response.data ||
+      !response.data.values ||
+      !response.data.values.length > 0
+    ) {
+      console.log('No caches found. Exiting.');
+      return;
+    }
+    console.log(response.data.values);
+
+
+    // // Just in case we ever use a second cache, we'll explicitly look for a node cache
+    const dockerCache = response.data.values.find(cache => cache.name === 'docker');
+    const cacheUuid = dockerCache.uuid;
+    console.log(queryString.escape(cacheUuid))
+    const deleteEndpoint = `https://api.bitbucket.org/internal/repositories/lignum-vitae/experiment-pipelinetest/pipelines_caches/${queryString.escape(cacheUuid)}`;
+    console.log(`Deleting cache "${cacheUuid}"`);
+    await axios.delete(deleteEndpoint, axiosConfig);
+
+  } catch (e) {
+    // The actual request to delete the cache will return a 500 error... That's what we get for
+    // relying on internal api's.... we'll ignore it if we see it
+    if (e.message !== 'Request failed with status code 500') {
+      console.error('Error fetching or deleting cache: ', e.message);
+      process.exit(1);
+    } else {
+      console.log('Success!');
+    }
+  }
+})();
+```
