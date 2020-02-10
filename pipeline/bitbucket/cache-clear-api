@@ -1,0 +1,7 @@
+現状、pipelineをclearするapiは存在しない。
+https://jira.atlassian.com/browse/BCLOUD-17605
+
+
+
+clearは1週間経過したときか、手動クリアしたときだけ。
+https://confluence.atlassian.com/bitbucket/caching-dependencies-895552876.html
