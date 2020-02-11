@@ -1,0 +1,7 @@
+git remote set-head origin master
+これで作れる。
+
+headがないと、git diff HEAD origin/HEADとかやった時にエラーになる。
+
+ここを
+https://blog.hello-world.jp.net/git-2/1565/
