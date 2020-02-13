@@ -1,0 +1,9 @@
+resourceをcreateしたときのAPIの戻りは、どうするのが良いか。
+　1.void  これだとIDをclient側で振らないと困る。
+  2.idのみ　これだと、server側で生成したcreatedAtなどの属性はわからない。
+  3.全体　楽だが、restの概念的にどうなのか？
+
+
+ここを見た限り、全体を返してしまえばよい。Updateも同じく。
+ https://stackoverflow.com/questions/19199872/best-practice-for-restful-post-response
+
