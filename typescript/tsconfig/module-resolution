@@ -1,0 +1,7 @@
+
+モジュールの解決方法には Node 方式と Classic 方式の 2 通りの方法が存在します。
+どちらを使用するかは --moduleResolution フラグを使用することで指定可能です。
+何も指定しなかった場合、--module AMD | System | ES2015 の場合は Classic 方式が、それ以外の場合は Node 方式が採用されます。
+
+
+いつもmodule= commonJsにしているので、Node方式が使われている。
