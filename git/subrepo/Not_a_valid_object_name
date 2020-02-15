@@ -1,0 +1,14 @@
+subrepo pushがこのエラーでできなくなった。
+
+https://github.com/ingydotnet/git-subrepo/issues/348
+git-subrepo: Command failed: 'git branch subrepo/include '.
+fatal: Not a valid object name: ''
+
+rebaseするとなる？
+
+
+.gitrepo消して、コミット。
+git subrepo init <subdir_path> -r <rmote>
+git subrepo push <subdir>
+
+で復活できる。
