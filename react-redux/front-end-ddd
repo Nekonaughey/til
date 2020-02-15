@@ -1,0 +1,25 @@
+これが結構参考になった
+https://design.dena.com/engineering/dena-techcon-2018-frontend-ddd/
+
+
+P11. storeとモデルの分断　⇒　まさにこの問題。
+P12. イベント駆動＋ヘキサゴナルアーキテクチャとReduxは相性が良い　⇒　この考えは同じ。
+
+P13. React + Redux + Sagaは同じ。
+ImmutableJS使ってないのと、flowTypeなのが違い。
+P36. ReduxのStoreはデータソースの保持のみであり、ふるまいを持っていない　⇒　まさにこれ。
+
+P37.immutableJSをモデルに使う話　⇒ こっちの方が参考になった。 https://www.wantedly.com/companies/wantedly/post_articles/28935
+
+P43～46. 小さくコンテキストを切ったら横断的関心事の扱いが難しくなったという話　⇒ 同じ悩み。
+Sagaを使ってイベント連携ということだと思うが、これ、Storeが１つの時はそれで良かったんだけど、MicrofrontEndにしてStoreが分かれると、そんなに簡単じゃない。
+Storeは分けて、HookをAPIとして公開するイメージの方が良いのではないかと考えている。
+
+また、Storeはリポジトリの実装という位置づけにして、Reduxを簡単に置き換えられると良い。
+
+P54～P59. あまりちゃんと読まなかった。
+P60～P66. 表示用のドメインモデルを作るという話。ReactにはmapStateToPropsで、StateではなくModelを注入しろということだろう。これは了解。
+
+
+immutableJsでmodelを作る話はここにもある。
+https://www.wantedly.com/companies/wantedly/post_articles/28935
