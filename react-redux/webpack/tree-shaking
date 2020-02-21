@@ -17,3 +17,21 @@ module-resolution node
 
 index.tsでまとめてexportなどはnode形式でしか使えない。
 moduleをes6にすると、resolutionもデフォルトでesになってしまうので、nodeで上書きする。
+
+
+
+# 追記
+やっとわかった
+package.jsonにsideEffect: falseを書いておかないと、
+副作用があるかもしれないから念のためbundleしておくよ、とwebpackが判断してしまうことがある。
+
+ライブラリなど副作用がないことがわかっているならこのフラグを付ける。
+
+ここが詳しい。
+https://www.kabuku.co.jp/developers/tree-shaking-in-2018
+
+
+また、commonJSもtree shakingできるらしい。
+https://github.com/indutny/webpack-common-shake
+
+
