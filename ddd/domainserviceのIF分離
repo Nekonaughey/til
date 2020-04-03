@@ -1,0 +1,4 @@
+ドメインサービスが外部APIに依存するケースなどで、インタフェースを切ってinfra層で実装しても良い、という話。
+
+回答者は、広義で見ればrepositoryもドメインサービスと捉えている様子。
+https://stackoverflow.com/questions/39610987/ddd-where-to-put-implementation-of-domain-services
