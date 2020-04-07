@@ -7,3 +7,10 @@ resourceをcreateしたときのAPIの戻りは、どうするのが良いか。
 ここを見た限り、全体を返してしまえばよい。Updateも同じく。
  https://stackoverflow.com/questions/19199872/best-practice-for-restful-post-response
 
+
+一方で、CQRSのコマンドは戻りを返さないという話がある。
+この記事がそれと同じ話だと思われる。
+https://stackoverflow.com/questions/43433318/cqrs-command-return-values
+
+
+https://vladikk.com/2017/03/20/tackling-complexity-in-cqrs/
