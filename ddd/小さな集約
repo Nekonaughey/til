@@ -1,0 +1,5 @@
+小さな集約に分割した場合、どうやって整合性を取るのか。
+
+
+
+https://stackoverflow.com/questions/46428382/how-to-delete-multiple-aggregates-in-ddd
