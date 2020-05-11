@@ -20,3 +20,24 @@
   ここに、HOC内でhooksを使うとエラーが出るという記載もあるが、今回は当てはまらないように思う。
   https://github.com/facebook/react/issues/15315#issuecomment-479742163
 */
+
+
+
+/**
+ * 認証済みであればChildをそのまま表示し、認証済みでなければSignInFormを表示するHOC。
+ * @param Child
+ */
+// export const requireAuthN = <ChildProps extends {}>(Child: React.FC<ChildProps>): React.FC<ChildProps> => {
+//   const WrappedComponent: React.FC<ChildProps> = props => {
+//     const { useAuth } = useContext(IamContext);
+//     const { ...rest } = props;
+
+//     // Userが存在する＝ログイン済み
+//     if (useAuth.currentIdToken()) return <Child {...(rest as ChildProps)} />;
+//     return <AuthNForm />;
+//   };
+
+//   // RouteComponentについては、下部のコメント参照。
+//   const RouteComponent = (props: ChildProps) => <WrappedComponent {...props} />;
+//   return RouteComponent;
+// };
