@@ -20,3 +20,8 @@ WINGSプロジェクト青木淳夫.「実践ドメイン駆動設計」から�
 この辺見た方が良い。
 https://vladikk.com/2017/03/20/tackling-complexity-in-cqrs/
 https://lostechies.com/jimmybogard/2012/08/22/busting-some-cqrs-myths/
+
+
+イベントからエンティティを組み立てる時、時間がかかるようならスナップショットを使うという話が書いてある。
+逆に言えば、パフォーマンスに問題がないなら都度イベントからくみ立てるようだ。
+https://geeks-world.github.io/articles/J322214/index.html
