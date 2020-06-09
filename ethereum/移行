@@ -1,0 +1,23 @@
+●コントラクトのupdateに関する調査
+Openzeppelinを調べてみて、かなり利用されている雰囲気もあるし、ツールを使えば簡単にコントラクトのupgradeもできる様子。
+
+この記事が参考になる。
+https://block-chain.jp/ethereum/proxy-contracts-1/
+
+一方で、ツール使うとかなり隠蔽されているのが気になる。
+https://ethereum.stackexchange.com/questions/75890/pros-and-cons-of-smart-contract-upgradable-patterns
+この質問者が引き合いに出している、以下の記事でも割と否定的。
+https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns/
+
+
+上記の記事を読むと、
+・そもそもアップデータブルにしなくて良いならするな。
+・アップデータブルよりもコントラクトのmigrationを考えろ。
+・どうしてもアップデータブルにするなら極力シンプルな実装を選べ。
+　相当に知識がないと大抵失敗してより脆弱になる。
+
+⇒現在のメンバーではアップデータブルにするのは相当リスキーな気がしてきた。
+　なのでmigrationを選択する。
+
+●コントラクトの移行に関する調査
+https://blog.trailofbits.com/2018/10/29/how-contract-migration-works/
