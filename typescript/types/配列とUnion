@@ -19,3 +19,14 @@ const keys = Object.keys(obj);　// stringの配列になってしまう。
 console.log(obj[keys[0]]); // keys[0]はstringであり、'abc' | 'def' | 'ghi'ではないので、エラーになる。
 
 
+
+// 以下のようにキャストすればいける
+const obj = {
+  abc: 'ABC',
+  def: 'DEF',
+  ghi: 'GHI',
+};
+
+type Key = keyof typeof obj;
+const keys: Key[] = Object.keys(obj) as Key[]; // stringの配列になってしまう。
+console.log(obj[keys[0]]); // keys[0]はstringであり、'abc' | 'def' | 'ghi'ではないので、エラーになる。
