@@ -5,7 +5,7 @@
   "recipient": {
     "type": "tel",
     "hashed": false,
-    "identity": "03-1234-5678"
+    "identity": "+810312345678"
   },
   "badge": "https://raw.githubusercontent.com/Nekonaughey/til/master/openbadge/tester-ability",
   "issuedOn": "2020-09-10T15:00:00Z",
