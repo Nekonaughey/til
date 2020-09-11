@@ -1,0 +1,18 @@
+{
+  "type": "Assertion",
+  "id": "https://raw.githubusercontent.com/Nekonaughey/til/master/openbadge/tester-deed2",
+  "@context": "https://w3id.org/openbadges/v2",
+  "recipient": {
+    "type": "tel",
+    "hashed": false,
+    "identity": "03-1234-5678"
+  },
+  "badge": "https://raw.githubusercontent.com/Nekonaughey/til/master/openbadge/tester-ability",
+  "issuedOn": "2020-09-10T15:00:00Z",
+  "image": {
+    "id": "https://api.badgr.io/public/assertions/-P2Y2VedQ7i23ZSt52LiyQ/image"
+  },
+  "verification": {
+    "type": "HostedBadge"
+  }
+}
