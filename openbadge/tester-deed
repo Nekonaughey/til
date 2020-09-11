@@ -1,6 +1,6 @@
 {
   "type": "Assertion",
-  "id": "https://api.badgr.io/public/assertions/-P2Y2VedQ7i23ZSt52LiyQ",
+  "id": "https://raw.githubusercontent.com/Nekonaughey/til/master/openbadge/tester-deed",
   "@context": "https://w3id.org/openbadges/v2",
   "recipient": {
     "type": "email",
