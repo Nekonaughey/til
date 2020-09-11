@@ -1,6 +1,6 @@
 {
   "type": "BadgeClass",
-  "id": "https://api.badgr.io/public/badges/aGrplEi4QH-Rj0KdUaXrzg",
+  "id": "https://raw.githubusercontent.com/Nekonaughey/til/master/openbadge/tester-ability",
   "@context": "https://w3id.org/openbadges/v2",
   "name": "Tester Test",
   "image": {
