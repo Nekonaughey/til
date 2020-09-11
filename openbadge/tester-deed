@@ -1,0 +1,19 @@
+{
+  "type": "Assertion",
+  "id": "https://api.badgr.io/public/assertions/-P2Y2VedQ7i23ZSt52LiyQ",
+  "@context": "https://w3id.org/openbadges/v2",
+  "recipient": {
+    "type": "email",
+    "salt": "7c40001defdb416f8ebfac97e8c94dac",
+    "hashed": true,
+    "identity": "sha256$2df5b743bf2802de5665d8963605bddc7f38dd42c72342fb16d767da4fbc5044"
+  },
+  "badge": "https://api.badgr.io/public/badges/aGrplEi4QH-Rj0KdUaXrzg",
+  "issuedOn": "2020-09-10T15:00:00Z",
+  "image": {
+    "id": "https://api.badgr.io/public/assertions/-P2Y2VedQ7i23ZSt52LiyQ/image"
+  },
+  "verification": {
+    "type": "HostedBadge"
+  }
+}
