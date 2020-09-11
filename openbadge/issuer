@@ -1,0 +1,9 @@
+{
+  "type": "Issuer",
+  "id": "https://api.badgr.io/public/issuers/dnueKvhwSKGsFmSkgDM0vg",
+  "@context": "https://w3id.org/openbadges/v2",
+  "name": "Tester",
+  "url": "https://tester.com",
+  "email": "begyo928@fuwamofu.com",
+  "description": "tester badge"
+}
