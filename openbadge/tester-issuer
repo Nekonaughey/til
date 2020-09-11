@@ -1,6 +1,6 @@
 {
   "type": "Issuer",
-  "id": "https://api.badgr.io/public/issuers/dnueKvhwSKGsFmSkgDM0vg",
+  "id": "https://raw.githubusercontent.com/Nekonaughey/til/master/openbadge/tester-issuer",
   "@context": "https://w3id.org/openbadges/v2",
   "name": "Tester",
   "url": "https://tester.com",
