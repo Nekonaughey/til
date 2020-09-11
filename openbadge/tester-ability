@@ -7,7 +7,7 @@
     "id": "https://api.badgr.io/public/badges/aGrplEi4QH-Rj0KdUaXrzg/image"
   },
   "description": "Tester test",
-  "issuer": "https://raw.githubusercontent.com/Nekonaughey/til/master/openbadge/tester-issuer",
+  "issuer": "https://api.badgr.io/public/issuers/dnueKvhwSKGsFmSkgDM0vg",
   "criteria": {
     "narrative": "tester test"
   }
