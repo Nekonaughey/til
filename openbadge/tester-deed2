@@ -3,7 +3,7 @@
   "id": "https://raw.githubusercontent.com/Nekonaughey/til/master/openbadge/tester-deed2",
   "@context": "https://w3id.org/openbadges/v2",
   "recipient": {
-    "type": "tel",
+    "type": "telephone",
     "hashed": false,
     "identity": "+810312345678"
   },
