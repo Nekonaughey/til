@@ -1,3 +1,0 @@
-https://stackoverflow.com/questions/55344670/remove-item-from-inferred-paramters-tuple
-
-Parametersで関数の引数の型を取ってきて、そこから、先頭の型だけを抜く、というようなことに使う。
