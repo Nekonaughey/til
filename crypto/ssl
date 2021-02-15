@@ -1,8 +1,0 @@
-https://security.stackexchange.com/questions/85963/what-is-the-purpose-of-frequently-rotating-tls-certificates-without-changing-und
-
-なんで期限を短くするのか。
-失効させていくとCRLを作る必要があるが、CRLはバイパスされる可能性がある。
-なるほど。
-短命にすることで被害を小さくできる。
-
-
